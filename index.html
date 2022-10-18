@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="divLogo">
+        <img class="logo" src="images/logo.png" alt="logo">
+    </div>
+
+    <div class="divBtn">
+        <button onclick="addBike()"><b>ADD BIKE</b></button>
+        <button onclick="removeLast()"><b>REMOVE LAST</b></button>
+        <button onclick="removeAll()"><b>REMOVE ALL</b></button>
+    </div>
+
+    <div id="addedBikes"></div>
+
+    <div class="divFullscreen">
+        <button class="btnFullscreen" onclick="openFullscreen()"><b>FULLSCREEN</b></button>
+    </div>
+
+    <div class="divMemory">
+        <button class="btnMemory" onclick="showMemory()"><b>DEVICE MEMORY</b></button>
+
+        <p>Your device memory is ~<b id="result">unknown</b> GiB.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
